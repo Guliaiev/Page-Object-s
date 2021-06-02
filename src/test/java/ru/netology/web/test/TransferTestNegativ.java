@@ -32,7 +32,7 @@ public class TransferTestNegativ {
 
         val transferPage = dahsboardPage.replenishBalanceSecondCard();
         val transferFrom1To2Card = Datahelper.getFirstCardInfo();
-        int transfer = 20001;
+        int transfer = 0;
         transferPage.transferFromFirstToSecond(transferFrom1To2Card, transfer);
         val balanceFirstCardAfterTrans = Datahelper.getBalanceCardMinus(startBalanceOfFirstCard, transfer);
         val balanceSecondCardAfterTrans = Datahelper.getBalanceCardPlus(startBalanceOfSecondCard, transfer);
